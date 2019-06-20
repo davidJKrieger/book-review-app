@@ -1,5 +1,11 @@
 class ReviewsController < ApplicationController
     def index
-        @quote = Quote.order("RANDOM()").first
+        @review = Review.order("RANDOM()").first
     end
+
+    def new
+        
+    end
+
+
 end
